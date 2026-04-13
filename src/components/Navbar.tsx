@@ -29,14 +29,14 @@ const Navbar = () => {
             <Link
               key={link.to}
               to={link.to}
-              className={`text-sm font-medium tracking-wide uppercase transition-colors hover:text-primary ${
+              className={`text-sm font-medium transition-colors hover:text-primary ${
                 location.pathname === link.to ? "text-primary" : "text-foreground"
               }`}
             >
               {link.label}
             </Link>
           ))}
-          <Button asChild size="sm" className="ml-2 uppercase tracking-wider text-xs font-bold">
+          <Button asChild size="sm" className="ml-2 text-xs font-bold">
             <Link to="/enquiry">Enquire Now</Link>
           </Button>
         </div>
@@ -55,14 +55,14 @@ const Navbar = () => {
               key={link.to}
               to={link.to}
               onClick={() => setOpen(false)}
-              className={`block py-3 text-sm font-medium uppercase tracking-wide border-b border-border/50 transition-colors hover:text-primary ${
+              className={`block py-3 text-sm font-medium border-b border-border/50 transition-colors hover:text-primary ${
                 location.pathname === link.to ? "text-primary" : "text-foreground"
               }`}
             >
               {link.label}
             </Link>
           ))}
-          <Button asChild className="w-full mt-4 uppercase tracking-wider text-xs font-bold">
+          <Button asChild className="w-full mt-4 text-xs font-bold">
             <Link to="/enquiry" onClick={() => setOpen(false)}>Enquire Now</Link>
           </Button>
         </div>

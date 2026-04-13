@@ -18,8 +18,8 @@ const BlogPost = () => {
             <Link to="/blog" className="inline-flex items-center text-avs-teal text-sm mb-6 hover:underline">
               <ArrowLeft className="h-4 w-4 mr-1" /> Back to Blog
             </Link>
-            <p className="text-avs-teal font-bold uppercase tracking-[0.3em] text-xs mb-3">Blog Post</p>
-            <h1 className="text-3xl md:text-4xl font-bold uppercase leading-tight">
+            <p className="text-avs-teal font-bold text-xs mb-3">Blog Post</p>
+            <h1 className="text-3xl md:text-4xl font-bold leading-tight">
               {slug?.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")}
             </h1>
           </motion.div>
@@ -42,7 +42,7 @@ const BlogPost = () => {
               Whether you're a captain looking to surprise charter guests, a broker seeking unique selling points for your listings, or a concierge company organising bespoke itineraries — we're here to help create moments that matter.
             </p>
           </div>
-          <Button asChild className="uppercase tracking-wider font-bold text-sm">
+          <Button asChild className="tracking-wider font-bold text-sm">
             <Link to="/enquiry">Enquire About Our Shows</Link>
           </Button>
         </div>

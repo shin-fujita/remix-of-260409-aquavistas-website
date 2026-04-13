@@ -63,8 +63,8 @@ const Press = () => {
       <section className="py-20 bg-avs-navy text-white">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <p className="text-avs-teal font-bold uppercase tracking-[0.3em] text-xs mb-3">Media</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase">Press & References</h1>
+            <p className="text-avs-teal font-bold text-xs mb-3">Media</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">Press & References</h1>
           </motion.div>
         </div>
       </section>
@@ -76,11 +76,11 @@ const Press = () => {
             {pressItems.filter((p) => p.featured).map((item) => (
               <Card key={item.outlet} className="border-primary/30 mb-8">
                 <CardContent className="p-8 md:p-12">
-                  <p className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-2">Featured</p>
+                  <p className="text-primary font-bold text-xs mb-2">Featured</p>
                   <p className="text-3xl font-bold italic text-foreground mb-2">{item.outlet}</p>
                   <h2 className="text-xl font-bold text-foreground mb-3">{item.title}</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">{item.description}</p>
-                  <Button variant="outline" size="sm" className="uppercase tracking-wider text-xs font-bold">
+                  <Button variant="outline" size="sm" className="tracking-wider text-xs font-bold">
                     Read Article <ExternalLink className="ml-1 h-3 w-3" />
                   </Button>
                 </CardContent>
@@ -108,7 +108,7 @@ const Press = () => {
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
           <motion.div {...fadeUp} className="text-center mb-12">
-            <h2 className="text-3xl font-bold uppercase text-foreground">What They Say</h2>
+            <h2 className="text-3xl font-bold text-foreground">What They Say</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((t, i) => (

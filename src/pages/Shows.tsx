@@ -200,8 +200,8 @@ const Shows = () => {
       <section className="py-16 bg-avs-navy text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-3">Our Entertainment</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-4">Our Shows</h1>
+            <p className="text-primary font-bold text-xs mb-3">Our Entertainment</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Our Shows</h1>
             <p className="text-white/60 max-w-xl mx-auto">
               Explore our constellation of world-class superyacht entertainment. Click any show to learn more.
             </p>
@@ -217,7 +217,7 @@ const Shows = () => {
               <button
                 key={f.key}
                 onClick={() => setActiveFilter(f.key)}
-                className={`px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border transition-all ${
+                className={`px-4 py-2 rounded-full text-xs font-bold border transition-all ${
                   activeFilter === f.key
                     ? "bg-primary text-primary-foreground border-primary"
                     : "bg-card border-border text-muted-foreground hover:border-primary/40"
@@ -309,7 +309,7 @@ const Shows = () => {
                       exit={{ opacity: 0, scale: 0.5 }}
                       transition={{ duration: 0.6, ease: "easeInOut" }}
                     >
-                      <div className={`${hub.colorClass} rounded-full px-3 py-1.5 text-white text-[9px] md:text-[10px] font-bold uppercase tracking-wider shadow-md whitespace-nowrap`}>
+                      <div className={`${hub.colorClass} rounded-full px-3 py-1.5 text-white text-[9px] md:text-[10px] font-bold shadow-md whitespace-nowrap`}>
                         {hub.label}
                       </div>
                     </motion.div>
@@ -349,7 +349,7 @@ const Shows = () => {
                           }}
                         >
                           <div
-                            className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-white font-bold text-[7px] md:text-[9px] uppercase leading-tight text-center p-1 transition-shadow overflow-hidden ${
+                            className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-white font-bold text-[7px] md:text-[9px] leading-tight text-center p-1 transition-shadow overflow-hidden ${
                               categoryColors[show.category]
                             } ${isHovered ? "shadow-lg shadow-primary/30 ring-2 ring-white/50" : ""}`}
                           >
@@ -360,7 +360,7 @@ const Shows = () => {
                             )}
                           </div>
                           {/* Tooltip label */}
-                          <div className={`absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap text-[8px] md:text-[9px] font-bold uppercase tracking-wider transition-opacity ${isHovered ? "opacity-100 text-foreground" : "opacity-0"}`}>
+                          <div className={`absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap text-[8px] md:text-[9px] font-bold transition-opacity ${isHovered ? "opacity-100 text-foreground" : "opacity-0"}`}>
                             {show.name}
                           </div>
                         </div>
@@ -387,11 +387,11 @@ const Shows = () => {
                             <img src={showHeroImages[hoveredShowData.id]} alt={hoveredShowData.name} className="w-full h-full object-cover" />
                           </div>
                         )}
-                        <p className="text-xs font-bold uppercase tracking-wider text-primary mb-1">
+                        <p className="text-xs font-bold text-primary mb-1">
                           {showCategories[hoveredShowData.category]}
                           {hoveredShowData.subcategory && ` · ${hoveredShowData.subcategory}`}
                         </p>
-                        <h3 className="text-lg font-bold uppercase text-foreground mb-2">{hoveredShowData.name}</h3>
+                        <h3 className="text-lg font-bold text-foreground mb-2">{hoveredShowData.name}</h3>
                         <p className="text-sm text-muted-foreground leading-relaxed mb-4">{hoveredShowData.shortDescription}</p>
                         <div className="space-y-2 text-sm text-muted-foreground mb-4">
                           <div className="flex items-center gap-2">
@@ -403,7 +403,7 @@ const Shows = () => {
                             {hoveredShowData.performers}
                           </div>
                         </div>
-                        <Button asChild size="sm" className="w-full uppercase tracking-wider text-xs font-bold">
+                        <Button asChild size="sm" className="w-full text-xs font-bold">
                           <Link to={`/shows/${hoveredShowData.id}`}>
                             View Details <ChevronRight className="ml-1 h-3 w-3" />
                           </Link>
@@ -423,13 +423,13 @@ const Shows = () => {
                         <div className="space-y-5">
                           {brandInfo.map((item) => (
                             <div key={item.title} className="text-center">
-                              <h4 className="text-sm font-bold uppercase text-foreground mb-1">{item.title}</h4>
+                              <h4 className="text-sm font-bold text-foreground mb-1">{item.title}</h4>
                               <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
                             </div>
                           ))}
                         </div>
                         <div className="mt-6 text-center">
-                          <Button asChild size="sm" className="uppercase tracking-wider text-xs font-bold">
+                          <Button asChild size="sm" className="tracking-wider text-xs font-bold">
                             <Link to="/enquiry">Ask Us How!</Link>
                           </Button>
                         </div>
@@ -472,19 +472,19 @@ const Shows = () => {
                             />
                           ) : (
                             <div className={`w-full h-full flex items-center justify-center ${categoryColors[show.category]}`}>
-                              <span className="text-white font-bold uppercase text-lg">{show.name}</span>
+                              <span className="text-white font-bold text-lg">{show.name}</span>
                             </div>
                           )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center gap-2 mb-2">
                             <div className={`w-2 h-2 rounded-full ${categoryColors[show.category]}`} />
-                            <span className="text-[10px] font-bold uppercase tracking-wider text-primary">
+                            <span className="text-[10px] font-bold text-primary">
                               {showCategories[show.category]}
                               {show.subcategory && ` · ${show.subcategory}`}
                             </span>
                           </div>
-                          <h3 className="font-bold uppercase text-foreground mb-1 group-hover:text-primary transition-colors">
+                          <h3 className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">
                             {show.name}
                           </h3>
                           <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">
@@ -526,7 +526,7 @@ const Shows = () => {
                       <AccordionTrigger className="px-4 py-3 hover:no-underline">
                         <div className="flex items-center gap-3">
                           <div className={`w-3 h-3 rounded-full ${categoryColors[key]}`} />
-                          <span className="font-bold text-sm uppercase tracking-wider text-foreground">{label}</span>
+                          <span className="font-bold text-sm text-foreground">{label}</span>
                           <span className="text-xs text-muted-foreground ml-1">({catShows.length})</span>
                         </div>
                       </AccordionTrigger>
@@ -538,7 +538,7 @@ const Shows = () => {
                           {grouped.map((group) => (
                             <div key={group.name}>
                               <div className="px-4 py-2 bg-muted/50">
-                                <p className="text-xs font-bold uppercase tracking-wider text-primary">{group.name}</p>
+                                <p className="text-xs font-bold text-primary">{group.name}</p>
                               </div>
                               {group.shows.map((show) => (
                                 <ShowListItem key={show.id} show={show} onClick={() => setSelectedShow(show)} />
@@ -556,7 +556,7 @@ const Shows = () => {
                     <AccordionTrigger className="px-4 py-3 hover:no-underline">
                       <div className="flex items-center gap-3">
                         <div className={`w-3 h-3 rounded-full ${categoryColors[key]}`} />
-                        <span className="font-bold text-sm uppercase tracking-wider text-foreground">{label}</span>
+                        <span className="font-bold text-sm text-foreground">{label}</span>
                         <span className="text-xs text-muted-foreground ml-1">({catShows.length})</span>
                       </div>
                     </AccordionTrigger>
@@ -576,7 +576,7 @@ const Shows = () => {
           {/* "More on Request" */}
           <div className="text-center mt-12">
             <p className="text-muted-foreground mb-4">Don't see what you're looking for?</p>
-            <Button asChild variant="outline" className="uppercase tracking-wider text-sm font-bold">
+            <Button asChild variant="outline" className="tracking-wider text-sm font-bold">
               <Link to="/enquiry">Request a Custom Show</Link>
             </Button>
           </div>
@@ -589,14 +589,14 @@ const Shows = () => {
           {selectedShow && (
             <>
               <DialogHeader>
-                <div className={`w-16 h-16 rounded-full ${categoryColors[selectedShow.category]} flex items-center justify-center text-white font-bold text-xs uppercase mb-4 overflow-hidden`}>
+                <div className={`w-16 h-16 rounded-full ${categoryColors[selectedShow.category]} flex items-center justify-center text-white font-bold text-xs mb-4 overflow-hidden`}>
                   {showHeroImages[selectedShow.id] ? (
                     <img src={showHeroImages[selectedShow.id]} alt={selectedShow.name} className="w-full h-full object-cover" />
                   ) : (
                     selectedShow.name.split(" ")[0]
                   )}
                 </div>
-                <DialogTitle className="text-2xl font-bold uppercase">{selectedShow.name}</DialogTitle>
+                <DialogTitle className="text-2xl font-bold">{selectedShow.name}</DialogTitle>
                 <DialogDescription className="text-muted-foreground">
                   {showCategories[selectedShow.category]}
                   {selectedShow.subcategory && ` · ${selectedShow.subcategory}`}
@@ -616,12 +616,12 @@ const Shows = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                  <Button asChild className="uppercase tracking-wider text-xs font-bold flex-1">
+                  <Button asChild className="tracking-wider text-xs font-bold flex-1">
                     <Link to={`/enquiry?show=${selectedShow.id}`}>
                       Enquire About This Show <ChevronRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" className="uppercase tracking-wider text-xs font-bold flex-1">
+                  <Button asChild variant="outline" className="tracking-wider text-xs font-bold flex-1">
                     <Link to={`/shows/${selectedShow.id}`}>
                       View Full Details
                     </Link>
@@ -646,7 +646,7 @@ const ShowListItem = ({ show, onClick }: { show: Show; onClick: () => void }) =>
       onClick={onClick}
       className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-muted/50 transition-colors"
     >
-      <div className={`w-8 h-8 rounded-full ${categoryColors[show.category]} flex items-center justify-center text-white text-[7px] font-bold uppercase flex-shrink-0 overflow-hidden`}>
+      <div className={`w-8 h-8 rounded-full ${categoryColors[show.category]} flex items-center justify-center text-white text-[7px] font-bold flex-shrink-0 overflow-hidden`}>
         {heroImg ? (
           <img src={heroImg} alt={show.name} className="w-full h-full object-cover" />
         ) : (

@@ -69,8 +69,8 @@ const Blog = () => {
       <section className="py-20 bg-avs-navy text-white">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <p className="text-avs-teal font-bold uppercase tracking-[0.3em] text-xs mb-3">Insights</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase">News & Insights</h1>
+            <p className="text-avs-teal font-bold text-xs mb-3">Insights</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">News & Insights</h1>
           </motion.div>
         </div>
       </section>
@@ -87,12 +87,12 @@ const Blog = () => {
                   </div>
                   <CardContent className="p-8">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="text-xs font-bold uppercase tracking-widest text-primary">{featured.category}</span>
+                      <span className="text-xs font-bold text-primary">{featured.category}</span>
                       <span className="text-xs text-muted-foreground">{featured.date}</span>
                     </div>
                     <h2 className="text-2xl font-bold text-foreground mb-3">{featured.title}</h2>
                     <p className="text-muted-foreground leading-relaxed mb-4">{featured.excerpt}</p>
-                    <span className="inline-flex items-center text-sm font-bold text-primary uppercase tracking-wider">
+                    <span className="inline-flex items-center text-sm font-bold text-primary">
                       Read More <ArrowRight className="ml-1 h-4 w-4" />
                     </span>
                   </CardContent>
@@ -116,7 +116,7 @@ const Blog = () => {
                     </div>
                     <CardContent className="p-5">
                       <div className="flex items-center gap-3 mb-2">
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-primary">{post.category}</span>
+                        <span className="text-[10px] font-bold text-primary">{post.category}</span>
                         <span className="text-[10px] text-muted-foreground">{post.date}</span>
                       </div>
                       <h3 className="font-bold text-foreground mb-2 text-sm leading-snug">{post.title}</h3>

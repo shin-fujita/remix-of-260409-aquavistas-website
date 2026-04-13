@@ -24,8 +24,8 @@ const About = () => {
       <section className="py-20 bg-avs-navy text-white">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
-            <p className="text-avs-teal font-bold uppercase tracking-[0.3em] text-xs mb-3">About Us</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-6">
+            <p className="text-avs-teal font-bold text-xs mb-3">About Us</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Entertainment Producers<br /><span className="text-avs-teal">Turned Superyacht Specialists</span>
             </h1>
             <p className="text-white/60 text-lg leading-relaxed">
@@ -39,7 +39,7 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
           <motion.div {...fadeUp} className="space-y-6 text-muted-foreground leading-relaxed">
-            <h2 className="text-2xl font-bold uppercase text-foreground">Our Story</h2>
+            <h2 className="text-2xl font-bold text-foreground">Our Story</h2>
             <p>
               Our journey began in the world of film and television production. With backgrounds spanning major studio productions, live events, and immersive theatre, our founding team understood one thing above all: the power of unforgettable experiences.
             </p>
@@ -57,8 +57,8 @@ const About = () => {
       <section className="py-20 bg-card border-y border-border">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
           <motion.div {...fadeUp} className="text-center">
-            <p className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-3">One Company, One Brand</p>
-            <h2 className="text-2xl md:text-3xl font-bold uppercase text-foreground mb-8">
+            <p className="text-primary font-bold text-xs mb-3">One Company, One Brand</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
               Aquavistas & Luxury Treasure Hunts
             </h2>
             <div className="flex items-center justify-center gap-8 md:gap-12 mb-8">
@@ -80,7 +80,7 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-12">
-            <h2 className="text-3xl font-bold uppercase text-foreground">What Makes Us Different</h2>
+            <h2 className="text-3xl font-bold text-foreground">What Makes Us Different</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
@@ -94,7 +94,7 @@ const About = () => {
                     <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
                       <item.icon className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="text-lg font-bold uppercase text-foreground mb-3">{item.title}</h3>
+                    <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                   </CardContent>
                 </Card>
@@ -107,11 +107,11 @@ const About = () => {
       {/* CTA */}
       <section className="py-20 bg-avs-navy text-white text-center">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold uppercase mb-4">Let's Go For Unforgettable</h2>
+          <h2 className="text-3xl font-bold mb-4">Let's Go For Unforgettable</h2>
           <p className="text-white/60 mb-8 max-w-md mx-auto">
             Ready to wow your next charter?
           </p>
-          <Button asChild size="lg" className="uppercase tracking-wider font-bold">
+          <Button asChild size="lg" className="tracking-wider font-bold">
             <Link to="/enquiry">Enquire Now</Link>
           </Button>
         </div>
