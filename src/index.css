@@ -131,4 +131,13 @@
   .bg-avs-pearl {
     background-color: hsl(210 33% 97.6%);
   }
+
+}
+
+@layer base {
+  /* Compensate Epilogue's high baseline in buttons/pills */
+  button,
+  [role="button"] {
+    padding-block-start: 0.15em;
+  }
 }
