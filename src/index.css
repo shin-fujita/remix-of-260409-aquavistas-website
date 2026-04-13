@@ -134,11 +134,10 @@
 
 }
 
-/* Fix Epilogue baseline shift in buttons/pills */
-button,
-[role="button"],
-a.inline-flex,
-[class*="inline-flex"] {
-  line-height: 1;
-  padding-block: 0.1em;
+@layer base {
+  /* Fix Epilogue's high baseline in compact elements */
+  button,
+  [role="button"] {
+    padding-top: 0.125em;
+  }
 }
