@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aquavistas Design System — Bright & Nautical */
+
+@layer base {
+  :root {
+    /* AVS Teal #00A8C4 */
+    --primary: 190 100% 38.4%;
+    --primary-foreground: 0 0% 100%;
+
+    /* AVS Pearl White #F7F9FB */
+    --background: 210 33% 97.6%;
+    /* AVS Deep Navy #081A30 */
+    --foreground: 215 75% 11%;
+
+    /* Pure White cards */
+    --card: 0 0% 100%;
+    --card-foreground: 215 75% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 75% 11%;
+
+    /* AVS Teal secondary lighter */
+    --secondary: 190 40% 94%;
+    --secondary-foreground: 215 75% 11%;
+
+    /* Muted — light grey tint */
+    --muted: 210 20% 94%;
+    /* AVS Slate Grey #4D5663 */
+    --muted-foreground: 215 11% 34.5%;
+
+    --accent: 190 30% 92%;
+    --accent-foreground: 215 75% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 190 100% 38.4%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 190 100% 38.4%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 190 30% 95%;
+    --sidebar-accent-foreground: 215 75% 11%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 190 100% 38.4%;
+  }
+
+  .dark {
+    --background: 215 75% 7%;
+    --foreground: 210 33% 97.6%;
+
+    --card: 215 60% 10%;
+    --card-foreground: 210 33% 97.6%;
+
+    --popover: 215 60% 10%;
+    --popover-foreground: 210 33% 97.6%;
+
+    --primary: 190 100% 38.4%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 40% 16%;
+    --secondary-foreground: 210 33% 97.6%;
+
+    --muted: 215 30% 18%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 215 40% 16%;
+    --accent-foreground: 210 33% 97.6%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 33% 97.6%;
+
+    --border: 215 30% 18%;
+    --input: 215 30% 18%;
+    --ring: 190 100% 38.4%;
+
+    --sidebar-background: 215 75% 7%;
+    --sidebar-foreground: 210 33% 97.6%;
+    --sidebar-primary: 190 100% 38.4%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 40% 16%;
+    --sidebar-accent-foreground: 210 33% 97.6%;
+    --sidebar-border: 215 30% 18%;
+    --sidebar-ring: 190 100% 38.4%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-avs-navy {
+    color: hsl(215 75% 11%);
+  }
+  .bg-avs-navy {
+    background-color: hsl(215 75% 11%);
+  }
+  .text-avs-teal {
+    color: hsl(190 100% 38.4%);
+  }
+  .bg-avs-teal {
+    background-color: hsl(190 100% 38.4%);
+  }
+  .text-avs-slate {
+    color: hsl(215 11% 34.5%);
+  }
+  .bg-avs-pearl {
+    background-color: hsl(210 33% 97.6%);
+  }
+}
