@@ -429,7 +429,7 @@ const Shows = () => {
                           ))}
                         </div>
                         <div className="mt-6 text-center">
-                          <Button asChild size="sm" className="tracking-wider text-xs font-bold">
+                          <Button asChild size="sm" className="text-xs font-bold">
                             <Link to="/enquiry">Ask Us How!</Link>
                           </Button>
                         </div>
@@ -576,7 +576,7 @@ const Shows = () => {
           {/* "More on Request" */}
           <div className="text-center mt-12">
             <p className="text-muted-foreground mb-4">Don't see what you're looking for?</p>
-            <Button asChild variant="outline" className="tracking-wider text-sm font-bold">
+            <Button asChild variant="outline" className="text-sm font-bold">
               <Link to="/enquiry">Request a Custom Show</Link>
             </Button>
           </div>
@@ -616,12 +616,12 @@ const Shows = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                  <Button asChild className="tracking-wider text-xs font-bold flex-1">
+                  <Button asChild className="text-xs font-bold flex-1">
                     <Link to={`/enquiry?show=${selectedShow.id}`}>
                       Enquire About This Show <ChevronRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" className="tracking-wider text-xs font-bold flex-1">
+                  <Button asChild variant="outline" className="text-xs font-bold flex-1">
                     <Link to={`/shows/${selectedShow.id}`}>
                       View Full Details
                     </Link>

@@ -111,7 +111,7 @@ const About = () => {
           <p className="text-white/60 mb-8 max-w-md mx-auto">
             Ready to wow your next charter?
           </p>
-          <Button asChild size="lg" className="tracking-wider font-bold">
+          <Button asChild size="lg" className="font-bold">
             <Link to="/enquiry">Enquire Now</Link>
           </Button>
         </div>

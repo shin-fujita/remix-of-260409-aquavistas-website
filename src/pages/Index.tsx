@@ -106,10 +106,10 @@ const Index = () => {
               Award-winning onboard shows, live music and immersive experiences delivered anywhere from the Mediterranean to the Caribbean and beyond.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="tracking-wider font-bold text-sm">
+              <Button asChild size="lg" className="font-bold text-sm">
                 <Link to="/shows">Explore Our Shows</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="tracking-wider font-bold text-sm border-white/30 bg-white/10 text-avs-teal hover:bg-white/20 hover:text-avs-teal">
+              <Button asChild size="lg" variant="outline" className="font-bold text-sm border-white/30 bg-white/10 text-avs-teal hover:bg-white/20 hover:text-avs-teal">
                 <Link to="/enquiry">Enquire Now</Link>
               </Button>
             </div>
@@ -261,7 +261,7 @@ const Index = () => {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Button asChild variant="outline" className="tracking-wider text-sm font-bold">
+            <Button asChild variant="outline" className="text-sm font-bold">
               <Link to="/shows/treasure-rush">
                 Discover Treasure Rush <ChevronRight className="ml-1 h-4 w-4" />
               </Link>
@@ -366,7 +366,7 @@ const Index = () => {
             <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
               Whether you're a Captain, Chief Stew, Broker, or Concierge — let's create something unforgettable.
             </p>
-            <Button asChild size="lg" className="tracking-wider font-bold">
+            <Button asChild size="lg" className="font-bold">
               <Link to="/enquiry">
                 Enquire Now <ChevronRight className="ml-1 h-4 w-4" />
               </Link>

@@ -80,7 +80,7 @@ const Press = () => {
                   <p className="text-3xl font-bold italic text-foreground mb-2">{item.outlet}</p>
                   <h2 className="text-xl font-bold text-foreground mb-3">{item.title}</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">{item.description}</p>
-                  <Button variant="outline" size="sm" className="tracking-wider text-xs font-bold">
+                  <Button variant="outline" size="sm" className="text-xs font-bold">
                     Read Article <ExternalLink className="ml-1 h-3 w-3" />
                   </Button>
                 </CardContent>

@@ -42,7 +42,7 @@ const BlogPost = () => {
               Whether you're a captain looking to surprise charter guests, a broker seeking unique selling points for your listings, or a concierge company organising bespoke itineraries — we're here to help create moments that matter.
             </p>
           </div>
-          <Button asChild className="tracking-wider font-bold text-sm">
+          <Button asChild className="font-bold text-sm">
             <Link to="/enquiry">Enquire About Our Shows</Link>
           </Button>
         </div>

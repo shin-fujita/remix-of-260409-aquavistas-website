@@ -119,7 +119,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             <p className="text-muted-foreground mb-8 max-w-md mx-auto">
               Your enquiry has been received. Our team will review your requirements and get back to you within 24 hours.
             </p>
-            <Button asChild variant="outline" className="tracking-wider font-bold text-sm">
+            <Button asChild variant="outline" className="font-bold text-sm">
               <Link to="/">Return Home</Link>
             </Button>
           </motion.div>
