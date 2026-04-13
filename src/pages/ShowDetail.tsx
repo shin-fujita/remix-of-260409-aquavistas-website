@@ -61,11 +61,11 @@ const ShowDetail = () => {
                 <img src={thIcon} alt="Treasure Hunts icon" className="w-20 h-20 rounded-full hidden md:block" />
               )}
               <div>
-                <p className="text-avs-teal font-bold uppercase tracking-[0.3em] text-xs mb-3">
+                <p className="text-avs-teal font-bold text-xs mb-3">
                   {showCategories[show.category]}
                   {show.subcategory && ` · ${show.subcategory}`}
                 </p>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-4">{show.name}</h1>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">{show.name}</h1>
                 <p className="text-white/60 max-w-xl text-lg">{show.shortDescription}</p>
                 <div className="flex flex-wrap gap-6 mt-6 text-sm text-white/50">
                   <span className="flex items-center gap-2"><Clock className="h-4 w-4 text-avs-teal" />{show.duration}</span>
@@ -85,7 +85,7 @@ const ShowDetail = () => {
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
             <div className="md:col-span-3">
-              <h2 className="text-xl font-bold uppercase text-foreground mb-4">About This Show</h2>
+              <h2 className="text-xl font-bold text-foreground mb-4">About This Show</h2>
               <p className="text-muted-foreground leading-relaxed">{show.description}</p>
             </div>
             <div className="md:col-span-2">
@@ -117,7 +117,7 @@ const ShowDetail = () => {
                   ))}
                 </div>
               )}
-              <Button asChild className="w-full uppercase tracking-wider font-bold text-sm">
+              <Button asChild className="w-full font-bold text-sm">
                 <Link to={`/enquiry?show=${show.id}`}>
                   Enquire About This Show <ChevronRight className="ml-1 h-4 w-4" />
                 </Link>
@@ -131,7 +131,7 @@ const ShowDetail = () => {
       {gallery.length > 0 && (
         <section className="py-16 bg-card">
           <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
-            <h2 className="text-xl font-bold uppercase text-foreground mb-8 text-center">Gallery</h2>
+            <h2 className="text-xl font-bold text-foreground mb-8 text-center">Gallery</h2>
             <div className={`grid gap-4 ${gallery.slice(0, 6).length <= 2 ? "grid-cols-1 md:grid-cols-2" : "grid-cols-2 md:grid-cols-3"}`}>
               {gallery.slice(0, 6).map((img, i) => (
                 <motion.div
@@ -159,7 +159,7 @@ const ShowDetail = () => {
       {relatedShows.length > 0 && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
-            <h2 className="text-xl font-bold uppercase text-foreground mb-8 text-center">You Might Also Like</h2>
+            <h2 className="text-xl font-bold text-foreground mb-8 text-center">You Might Also Like</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {relatedShows.map((rs, i) => {
                 const rsHero = showHeroImages[rs.id] || null;
@@ -181,7 +181,7 @@ const ShowDetail = () => {
                           </div>
                         )}
                       </div>
-                      <p className="text-sm font-bold uppercase text-foreground group-hover:text-primary transition-colors">{rs.name}</p>
+                      <p className="text-sm font-bold text-foreground group-hover:text-primary transition-colors">{rs.name}</p>
                     </Link>
                   </motion.div>
                 );

@@ -13,8 +13,8 @@ const Contact = () => {
       <section className="py-20 bg-avs-navy text-white">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <p className="text-avs-teal font-bold uppercase tracking-[0.3em] text-xs mb-3">Get In Touch</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase">Contact Us</h1>
+            <p className="text-avs-teal font-bold text-xs mb-3">Get In Touch</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">Contact Us</h1>
           </motion.div>
         </div>
       </section>
@@ -23,7 +23,7 @@ const Contact = () => {
         <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-xl font-bold uppercase text-foreground mb-6">Contact Details</h2>
+              <h2 className="text-xl font-bold text-foreground mb-6">Contact Details</h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -58,7 +58,7 @@ const Contact = () => {
               </div>
 
               <div className="mt-8">
-                <h3 className="text-sm font-bold uppercase text-foreground mb-3">Follow Us</h3>
+                <h3 className="text-sm font-bold text-foreground mb-3">Follow Us</h3>
                 <div className="flex gap-3">
                   {["Instagram", "LinkedIn", "Facebook"].map((platform) => (
                     <a
@@ -74,11 +74,11 @@ const Contact = () => {
             </div>
 
             <div className="bg-card p-8 rounded-lg border border-border">
-              <h2 className="text-xl font-bold uppercase text-foreground mb-4">Ready to Book?</h2>
+              <h2 className="text-xl font-bold text-foreground mb-4">Ready to Book?</h2>
               <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
                 For entertainment enquiries, our dedicated enquiry form captures all the details we need to design your perfect onboard experience.
               </p>
-              <Button asChild className="w-full uppercase tracking-wider font-bold text-sm">
+              <Button asChild className="w-full font-bold text-sm">
                 <Link to="/enquiry">
                   Go to Enquiry Form <ChevronRight className="ml-1 h-4 w-4" />
                 </Link>

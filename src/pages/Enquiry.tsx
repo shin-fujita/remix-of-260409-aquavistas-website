@@ -115,11 +115,11 @@ const handleSubmit = async (e: React.FormEvent) => {
         <div className="container mx-auto px-4 py-32 text-center">
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}>
             <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" />
-            <h1 className="text-3xl font-bold uppercase text-foreground mb-4">Thank You!</h1>
+            <h1 className="text-3xl font-bold text-foreground mb-4">Thank You!</h1>
             <p className="text-muted-foreground mb-8 max-w-md mx-auto">
               Your enquiry has been received. Our team will review your requirements and get back to you within 24 hours.
             </p>
-            <Button asChild variant="outline" className="uppercase tracking-wider font-bold text-sm">
+            <Button asChild variant="outline" className="font-bold text-sm">
               <Link to="/">Return Home</Link>
             </Button>
           </motion.div>
@@ -136,8 +136,8 @@ const handleSubmit = async (e: React.FormEvent) => {
       <section className="py-16 bg-avs-navy text-white">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <p className="text-avs-teal font-bold uppercase tracking-[0.3em] text-xs mb-3">Book Entertainment</p>
-            <h1 className="text-4xl md:text-5xl font-bold uppercase">Enquire Now</h1>
+            <p className="text-avs-teal font-bold text-xs mb-3">Book Entertainment</p>
+            <h1 className="text-4xl md:text-5xl font-bold">Enquire Now</h1>
             <p className="text-white/60 mt-3 max-w-xl">
               Tell us about your yacht, your guests, and the occasion. We'll design the perfect entertainment experience.
             </p>
@@ -154,7 +154,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 type="button"
                 onClick={() => setEnquiryType("charter")}
                 className={cn(
-                  "flex-1 py-3 px-6 text-sm font-bold uppercase tracking-wider transition-colors",
+                  "flex-1 py-3 px-6 text-sm font-bold transition-colors",
                   enquiryType === "charter"
                     ? "bg-primary text-primary-foreground"
                     : "bg-card text-muted-foreground hover:text-foreground"
@@ -166,7 +166,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 type="button"
                 onClick={() => setEnquiryType("general")}
                 className={cn(
-                  "flex-1 py-3 px-6 text-sm font-bold uppercase tracking-wider transition-colors",
+                  "flex-1 py-3 px-6 text-sm font-bold transition-colors",
                   enquiryType === "general"
                     ? "bg-primary text-primary-foreground"
                     : "bg-card text-muted-foreground hover:text-foreground"
@@ -179,7 +179,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 {enquiryType === "general" ? (
   <form onSubmit={handleSubmit} className="space-y-8">
     <div>
-      <h2 className="text-lg font-bold uppercase text-foreground mb-4">Your Details</h2>
+      <h2 className="text-lg font-bold text-foreground mb-4">Your Details</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <Label htmlFor="name">Full Name *</Label>
@@ -202,7 +202,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       <span className="text-sm text-muted-foreground">Subscribe to the Aquavistas newsletter for show updates and inspiration</span>
     </label>
 
-    <Button type="submit" size="lg" className="w-full uppercase tracking-wider font-bold">
+    <Button type="submit" size="lg" className="w-full font-bold">
       Submit Enquiry
     </Button>
   </form>
@@ -210,7 +210,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   <form onSubmit={handleSubmit} className="space-y-8">
     {/* Contact Info */}
     <div>
-      <h2 className="text-lg font-bold uppercase text-foreground mb-4">Your Details</h2>
+      <h2 className="text-lg font-bold text-foreground mb-4">Your Details</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <Label htmlFor="name">Full Name *</Label>
@@ -233,7 +233,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
     {/* Yacht Info */}
     <div>
-      <h2 className="text-lg font-bold uppercase text-foreground mb-4">Yacht & Event Details</h2>
+      <h2 className="text-lg font-bold text-foreground mb-4">Yacht & Event Details</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <Label htmlFor="boatName">Boat Name *</Label>
@@ -304,7 +304,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
     {/* Shows (unchanged) */}
     <div>
-      <h2 className="text-lg font-bold uppercase text-foreground mb-4">Shows Interested In</h2>
+      <h2 className="text-lg font-bold text-foreground mb-4">Shows Interested In</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
         {shows.map((show) => (
           <button
@@ -329,7 +329,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       <Textarea id="requests" value={formData.requests} onChange={handleChange} placeholder="Any special requirements..." className="mt-1" rows={4} />
     </div>
 
-    <Button type="submit" size="lg" className="w-full uppercase tracking-wider font-bold">
+    <Button type="submit" size="lg" className="w-full font-bold">
       Submit Enquiry
     </Button>
   </form>

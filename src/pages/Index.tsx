@@ -95,10 +95,10 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <p className="text-avs-teal font-bold uppercase tracking-[0.3em] text-sm mb-4">
+            <p className="text-avs-teal font-bold text-sm mb-4">
               Onboard, Anywhere
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold uppercase leading-[1.1] mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6">
               Premium Entertainment<br />
               <span className="text-avs-teal">for Superyachts</span>
             </h1>
@@ -106,10 +106,10 @@ const Index = () => {
               Award-winning onboard shows, live music and immersive experiences delivered anywhere from the Mediterranean to the Caribbean and beyond.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="uppercase tracking-wider font-bold text-sm">
+              <Button asChild size="lg" className="font-bold text-sm">
                 <Link to="/shows">Explore Our Shows</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="uppercase tracking-wider font-bold text-sm border-white/30 bg-white/10 text-avs-teal hover:bg-white/20 hover:text-avs-teal">
+              <Button asChild size="lg" variant="outline" className="font-bold text-sm border-white/30 bg-white/10 text-avs-teal hover:bg-white/20 hover:text-avs-teal">
                 <Link to="/enquiry">Enquire Now</Link>
               </Button>
             </div>
@@ -120,7 +120,7 @@ const Index = () => {
       {/* Trusted By */}
       <section className="py-12 border-b border-border bg-card">
         <div className="container mx-auto px-4">
-          <p className="text-center text-xs uppercase tracking-[0.3em] text-muted-foreground font-bold mb-6">
+          <p className="text-center text-xs text-muted-foreground font-bold mb-6">
             Trusted by the Yachting Community
           </p>
           <div className="overflow-hidden relative">
@@ -139,8 +139,8 @@ const Index = () => {
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-14">
-            <p className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-2">How It Works</p>
-            <h2 className="text-3xl md:text-4xl font-bold uppercase text-foreground">What to Expect</h2>
+            <p className="text-primary font-bold text-xs mb-2">How It Works</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">What to Expect</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {steps.map((step, i) => (
@@ -155,8 +155,8 @@ const Index = () => {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
                   <step.icon className="h-7 w-7 text-primary" />
                 </div>
-                <div className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Step {i + 1}</div>
-                <h3 className="text-lg font-bold uppercase text-foreground mb-2">{step.title}</h3>
+                <div className="text-xs font-bold text-primary mb-1">Step {i + 1}</div>
+                <h3 className="text-lg font-bold text-foreground mb-2">{step.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
               </motion.div>
             ))}
@@ -168,8 +168,8 @@ const Index = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-14">
-            <p className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-2">Why Choose Us</p>
-            <h2 className="text-3xl md:text-4xl font-bold uppercase text-foreground">
+            <p className="text-primary font-bold text-xs mb-2">Why Choose Us</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Why Brokers, Crew & Agents Choose Aquavistas
             </h2>
           </motion.div>
@@ -187,7 +187,7 @@ const Index = () => {
                     <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
                       <item.icon className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="text-lg font-bold uppercase text-foreground mb-3">{item.title}</h3>
+                    <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                   </CardContent>
                 </Card>
@@ -201,7 +201,7 @@ const Index = () => {
       <section className="py-16 bg-card border-y border-border">
         <div className="container mx-auto px-4 text-center">
           <motion.div {...fadeUp}>
-            <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground font-bold mb-6">As Featured In</p>
+            <p className="text-xs text-muted-foreground font-bold mb-6">As Featured In</p>
             <div className="flex items-center justify-center gap-12 flex-wrap">
               <span className="text-2xl font-bold text-foreground italic">Forbes</span>
               <span className="text-lg font-medium text-muted-foreground">Yacht International</span>
@@ -216,8 +216,8 @@ const Index = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <motion.div {...fadeUp} className="text-center mb-8">
-            <p className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-2">Previously Seen On</p>
-            <h2 className="text-3xl md:text-4xl font-bold uppercase text-foreground">Yachts We've Performed On</h2>
+            <p className="text-primary font-bold text-xs mb-2">Previously Seen On</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Yachts We've Performed On</h2>
           </motion.div>
           <div className="overflow-hidden relative">
             <div className="flex animate-scroll-left gap-10 w-max">
@@ -235,8 +235,8 @@ const Index = () => {
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-12">
-            <p className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-2">Our Signature Experience</p>
-            <h2 className="text-3xl md:text-4xl font-bold uppercase text-foreground">Treasure Hunts</h2>
+            <p className="text-primary font-bold text-xs mb-2">Our Signature Experience</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Treasure Hunts</h2>
             <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
               Our flagship immersive adventure — a cinematic Treasure Hunt brought to life from your superyacht to the stunning shores of your dream location.
             </p>
@@ -261,7 +261,7 @@ const Index = () => {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Button asChild variant="outline" className="uppercase tracking-wider text-sm font-bold">
+            <Button asChild variant="outline" className="text-sm font-bold">
               <Link to="/shows/treasure-rush">
                 Discover Treasure Rush <ChevronRight className="ml-1 h-4 w-4" />
               </Link>
@@ -274,8 +274,8 @@ const Index = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-12">
-            <p className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-2">See It In Action</p>
-            <h2 className="text-3xl md:text-4xl font-bold uppercase text-foreground">Trailers</h2>
+            <p className="text-primary font-bold text-xs mb-2">See It In Action</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Trailers</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[1, 2].map((i) => (
@@ -297,8 +297,8 @@ const Index = () => {
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-14">
-            <p className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-2">What They Say</p>
-            <h2 className="text-3xl md:text-4xl font-bold uppercase text-foreground">Guest Reviews</h2>
+            <p className="text-primary font-bold text-xs mb-2">What They Say</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Guest Reviews</h2>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
@@ -321,11 +321,11 @@ const Index = () => {
               >
                 <span className="absolute top-3 left-4 text-4xl font-serif text-primary leading-none">"</span>
                 <span className="absolute bottom-3 right-4 text-4xl font-serif text-primary leading-none">"</span>
-                <p className="text-lg md:text-xl font-extrabold uppercase text-primary mt-4 mb-4 leading-tight">
+                <p className="text-lg md:text-xl font-extrabold text-primary mt-4 mb-4 leading-tight">
                   {t.quote}
                 </p>
                 <p className="text-sm text-foreground font-medium">{t.author}</p>
-                <p className="text-xs text-primary font-bold uppercase tracking-wider">{t.yacht}</p>
+                <p className="text-xs text-primary font-bold">{t.yacht}</p>
               </motion.div>
             ))}
           </div>
@@ -336,8 +336,8 @@ const Index = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-12">
-            <p className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-2">Where We Perform</p>
-            <h2 className="text-3xl md:text-4xl font-bold uppercase text-foreground">Locations We Cover</h2>
+            <p className="text-primary font-bold text-xs mb-2">Where We Perform</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Locations We Cover</h2>
             <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
               We deliver our shows all over the world. Here are some of our most popular destinations.
             </p>
@@ -360,13 +360,13 @@ const Index = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 text-center">
           <motion.div {...fadeUp}>
-            <h2 className="text-3xl md:text-4xl font-bold uppercase text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Ready to Wow Your Guests?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
               Whether you're a Captain, Chief Stew, Broker, or Concierge — let's create something unforgettable.
             </p>
-            <Button asChild size="lg" className="uppercase tracking-wider font-bold">
+            <Button asChild size="lg" className="font-bold">
               <Link to="/enquiry">
                 Enquire Now <ChevronRight className="ml-1 h-4 w-4" />
               </Link>
@@ -379,7 +379,7 @@ const Index = () => {
       <section className="py-20 bg-avs-navy text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div {...fadeUp}>
-            <h2 className="text-3xl md:text-4xl font-bold uppercase mb-4">Stay in the Loop</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Stay in the Loop</h2>
             <p className="text-white/60 mb-8 max-w-md mx-auto">
               Get the latest on new shows, destinations, and exclusive superyacht entertainment insights.
             </p>
@@ -391,7 +391,7 @@ const Index = () => {
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-avs-teal text-white font-bold uppercase tracking-wider text-sm rounded-md hover:bg-avs-teal/90 transition-colors"
+                className="px-6 py-3 bg-avs-teal text-white font-bold text-sm rounded-md hover:bg-avs-teal/90 transition-colors"
               >
                 Subscribe
               </button>

@@ -30,7 +30,7 @@ const Footer = () => {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-widest text-avs-teal mb-4">Navigation</h3>
+            <h3 className="text-sm font-bold text-avs-teal mb-4">Navigation</h3>
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.to}>
@@ -44,13 +44,13 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-widest text-avs-teal mb-4">Get In Touch</h3>
+            <h3 className="text-sm font-bold text-avs-teal mb-4">Get In Touch</h3>
             <div className="space-y-2 text-sm text-white/70">
               <p>shows@aquavistas.com</p>
               <p>+44 7564 013196</p>
             </div>
             <div className="mt-6">
-              <h3 className="text-sm font-bold uppercase tracking-widest text-avs-teal mb-3">Newsletter</h3>
+              <h3 className="text-sm font-bold text-avs-teal mb-3">Newsletter</h3>
               <form onSubmit={(e) => e.preventDefault()} className="flex gap-2">
                 <input
                   type="email"
