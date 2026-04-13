@@ -131,4 +131,11 @@
   .bg-avs-pearl {
     background-color: hsl(210 33% 97.6%);
   }
+
+  /* Fix Epilogue vertical centering in buttons/pills */
+  button,
+  [role="button"],
+  a[class*="inline-flex"] {
+    padding-top: 0.0625em;
+  }
 }
