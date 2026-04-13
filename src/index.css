@@ -135,9 +135,12 @@
 }
 
 @layer base {
-  /* Fix Epilogue's high baseline in compact elements */
+  /* Fix Epilogue's high baseline — nudge text down in compact elements */
   button,
-  [role="button"] {
-    padding-top: 0.125em;
+  [role="button"],
+  [class*="rounded-full"][class*="px-"],
+  [class*="rounded-md"][class*="px-"] {
+    -webkit-padding-before: 0.15em;
+    padding-block-start: 0.15em;
   }
 }
